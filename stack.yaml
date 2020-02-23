@@ -4,6 +4,10 @@
 # For advanced use and comprehensive documentation of the format, please see:
 # https://docs.haskellstack.org/en/stable/yaml_configuration/
 
+nix:
+  packages:
+    - zlib.dev
+
 # Resolver to choose a 'specific' stackage snapshot or a compiler version.
 # A snapshot resolver dictates the compiler version and the set of packages
 # to be used for project dependencies. For example:
@@ -15,7 +19,7 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-12.9
+resolver: lts-14.25
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -42,6 +46,7 @@ packages:
 extra-deps:
 - hxt-xpath-9.1.2.2
 - clustering-0.4.0
+- karver-0.1.2@sha256:ee99a21567b04d5ee4f55dfb20ebbf466e8183c56af22e10878947f60cc32c4d,1755
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

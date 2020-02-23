@@ -62,7 +62,7 @@ library
     , hxt
     , hxt-xpath
     , karver
-    , hastache
+    , mustache
     , pretty-simple
     , regex-posix
     , safe
@@ -100,7 +100,7 @@ executable genstm
     , hxt
     , hxt-xpath
     , karver
-    , hastache
+    , mustache
     , safe
     , syb
     , mtl
